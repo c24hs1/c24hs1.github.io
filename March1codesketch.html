@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css"></style>
+</head>
+<body>
+
+
+
+	<h1>Hungry for Coooooookies!</h1>
+	<script type="text/javascript">
+
+
+		function makeCookie () {
+
+			var cookie = document.createElement("div");
+			document.body.appendChild(cookie);
+			cookie.style.width = "200px";
+			cookie.style.height = "200px";
+			cookie.style.backgroundRepeat = "no-repeat";
+			cookie.style.display = "inline-block";
+			cookie.style.backgroundImage = "url(http://assets.stickpng.com/images/580b57fbd9996e24bc43c0fc.png)"; 
+			cookie.style.backgroundSize = "contain";
+
+
+
+
+		}
+
+
+	setInterval(makeCookie, 1000)
+	
+	document.addEventListener("click", function eat(){
+		cookie.style.opacity = "0"});
+	</script>
+
+	
+
+</body>
+</html>

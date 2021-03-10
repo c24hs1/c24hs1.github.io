@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		body{
+			height:100px;
+		}
+
+		#hummingbird{
+			width: 200px;
+			height: 200px;
+			background-image:url(https://as2.ftcdn.net/jpg/01/09/07/73/500_F_109077304_EhTvblo0iOJvSPZ4QDDpvP3Nz4OTZq5e.jpg);
+			background-size:contain;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+		var counter = 0;
+		
+		function makeHummingbird() {
+
+		var hummingbird = document.createElement("div");
+		document.body.appendChild(hummingbird);
+		hummingbird.id = "hummingbird";
+		counter = "I have" counter +1 "hummingbirds";
+		console.log(counter)
+		}
+
+		document.addEventListener("keypress", makeHummingbird);
+makeHummingbird();
+
+	</script>
+
+</body>
+</html>
