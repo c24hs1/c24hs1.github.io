@@ -8,9 +8,7 @@
 		#box{
 		width:500px;
 		height:500px;
-		position:relative;
-		top: 75px;
-		left:40%;
+		background-position:center;
 		background-color:lightblue;
 		}
 
@@ -37,24 +35,26 @@
 
 	<div id="whitebox"></div>
 
+	<audio id="mysong1"s idcontrols src ="mysong1.mp3"></audio>
+
 	<script type="text/javascript">
+		var whitebox = document.getElementById("whitebox");
 
-		var molly = "flower"; 
-		function hello(){
-			console.log ("hi hattie!")
-		}	
-
-
-
-
+		var mysong1 = document.getElementById('mysong1');
 
 		var box = document.getElementById("box");
 		box.style.backgroundColor = "rgb(200, 100, 100)";
 		
-		document.addEventListener (
+		whitebox.addEventListener (
 			"click", function(event){
+		var red = Math.round(Math.random()*255);
+		var blue = Math.round(Math.random()*255);
+		var green = Math.round(Math.random()*255);
 				console.log(event);
-				box.style.backgroundColor = "rgb("+ event.clientX + "," + event.clientY + "," + 0 + ")";})
+				box.style.backgroundColor = "rgb("+ red + "," + green + "," + blue + ")";})
+
+		mysong1.play();
+
 
 	</script>
 
