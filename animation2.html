@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		body{
+			background: url(detailed-cartoon-map-of-the-usa.png) no-repeat center center fixed;
+			background-size:cover;
+			height: 100%;	
+		}
+
+		#plane1{
+			background-image:url(plane1.png);
+			width:120px;
+			height:120px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			position:absolute;
+			top:200px;
+			right:150px;
+			animation-name:planeflight;
+			animation-duration:12s;
+			animation-iteration-count:infinite;
+		}
+
+		@keyframes planeflight{
+			0%{
+				background-image:url(plane1.png);
+				position:absolute;
+				left:75%;
+
+			}
+			49%{
+			background-image:url(plane1.png);
+			position:absolute;
+			left:17%;
+			top:270px;
+		}
+
+			50%{
+				background-image:url(plane2.png);
+				position:absolute;
+				left:17%;
+				top:270px;
+			}
+			
+			
+			100%{
+				background-image:url(plane2.png);
+				position:absolute;
+			left:75%;
+			top:200px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div id="plane1"></div>
+
+</body>
+</html>
