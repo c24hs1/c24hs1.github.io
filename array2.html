@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	
+	#foodchoice{
+		width:1000px;
+		height:1000px;
+		top:5px;
+		background-image:url("croissantimage.png");
+		background-position:center;
+
+	}
+</style>
+</head>
+<body>
+
+<div id="foodchoice"></div>
+
+<script type="text/javascript">
+	var images = ["url(popcornimage.png)", "url(soupimage.png)", "url(fruittartimage.png)", " url(grilledcheeseimage.png)", "url(hotcocoaimage.png)", "url(coffeeimage.png)", "url(chocolateimage.png)", "url(cookieimage.png)", "url(teaimage.png)"];
+
+
+	var foodchoice = document.getElementById('foodchoice');
+	
+
+foodchoice.addEventListener("click", function() {
+	    var random = Math.floor(10*Math.random());
+
+	    console.log(images[random]);
+
+	    foodchoice.style.backgroundImage = images[random];
+	})
+
+</script>
+</body>
+
+
+</html>

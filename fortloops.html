@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+	
+	.cookies{
+		height:200px;
+		width:200px;
+		background-color:pink;
+
+	}
+
+	</style>
+</head>
+<body>
+	<div class="cookiesp;"></div>
+
+	<script type="text/javascript">
+		function makeCookie (input){
+			var cookie = document.createElement('div');
+
+			cookie.classList.add('cookies'); 
+
+			document.body.appendChild(cookie);
+
+			cookie.innerText = input;
+
+		};
+
+		makeCookie();
+
+		//setInterval(makeCookie, 1000);
+
+		for(var i=0; i<100; i=i+20){makeCookie(i)}
+
+
+
+	</script>
+
+</body>
+</html>
