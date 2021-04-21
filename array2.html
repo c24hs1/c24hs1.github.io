@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poiret+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 	<title></title>
 
 <style type="text/css">
 	
 	#foodchoice{
-		width:1000px;
-		height:1000px;
+		width:1200px;
+		height:1500px;
+		position:absolute;
+		top:70px;
+		
+	}
+	#title{
+		font-family: 'Patrick Hand', cursive;
+		font-size: 50px;
+		position:absolute;
 		top:5px;
-		background-image:url("croissantimage.png");
-		background-position:center;
+		left:25%;
 
 	}
 </style>
@@ -18,16 +26,17 @@
 <body>
 
 <div id="foodchoice"></div>
+<center><div id="title">Click to choose your comfort snack!</div></center>
 
 <script type="text/javascript">
-	var images = ["url(popcornimage.png)", "url(soupimage.png)", "url(fruittartimage.png)", " url(grilledcheeseimage.png)", "url(hotcocoaimage.png)", "url(coffeeimage.png)", "url(chocolateimage.png)", "url(cookieimage.png)", "url(teaimage.png)"];
+	var images = [ "url(croissantimage.png)", "url(popcornimage.png)", "url(soupimage.png)", "url(fruittartimage.png)", " url(grilledcheeseimage.png)", "url(hotcocoaimage.png)", "url(coffeeimage.png)", "url(chocolateimage.png)", "url(cookieimage.png)", "url(teaimage.png)", "url(lemonadeimage.png)", "url(blackwhitecookie.png", "url(candy.png)"];
 
 
 	var foodchoice = document.getElementById('foodchoice');
 	
 
 foodchoice.addEventListener("click", function() {
-	    var random = Math.floor(10*Math.random());
+	    var random = Math.floor(13*Math.random());
 
 	    console.log(images[random]);
 
