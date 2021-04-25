@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poiret+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Gugi&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Gugi&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+	
+
+	<style type="text/css">
+	
+	.cookies{
+		height:90px;
+		width:90px;
+		background-image:url(forloopspicture.png);
+		background-size:contain;
+		background-repeat: no-repeat;
+	
+	}
+
+	#heading1{
+		font-family:"Gugi", cursive;
+		font-size:50px;
+		position:absolute;
+		top:5px;
+		left:30%;
+	}
+
+	#heading2{
+		font-family:'ZCOOL QingKe HuangYou', cursive;
+		font-size:50px;
+		position:absolute;
+		top:70px;
+		left:24%;
+	}
+	</style>
+</head>
+<body>
+	<div class="cookiesp;"></div>
+	<div id="heading1">Wac-A-Smiley-Face</div>
+	<div id="heading2">Click to see how many you can get!</div>
+
+
+
+	<script type="text/javascript">
+		function makeCookie (x){
+			var cookie = document.createElement('div');
+
+			cookie.classList.add('cookies'); 
+
+			document.body.appendChild(cookie);
+
+			cookie.innerText = x;
+cookie.addEventListener("click", function makeCookie () {cookie.style.opacity = "0"});
+
+		};
+
+		makeCookie();
+
+		//setInterval(makeCookie, 1000);
+
+		for(var i=0; i<5000; i=i+1){makeCookie(i)}
+
+
+
+	</script>
+
+</body>
+</html>
