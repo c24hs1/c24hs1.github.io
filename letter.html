@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Newsreader&family=Satisfy&display=swap" rel="stylesheet">
+
+	<title></title>
+
+	<style type="text/css">
+
+		body{
+			background-color:#FFFFF8;
+		}
+
+		#lettertext{
+			font-family: 'Newsreader', serif;
+			font-size:30px;
+			position:absolute;
+			top:85px;
+			left:400px;
+			right:200px;
+		}
+
+		#gif1{
+			opacity:0;	
+
+
+		}
+
+		#gif2{
+			opacity:0;	
+		}
+
+		#intro{
+			font-family: 'Satisfy', cursive;
+			font-size:50px;
+			position:absolute;
+			top:5px;
+			left:40%;
+			right:200px;
+
+		}
+
+		#message1{
+			color: pink;
+		}
+
+		#message2{
+			color: pink;
+		}
+	</style>
+
+
+
+</head>
+<body>
+
+<div id="intro">Dear Mom,</div>
+
+<div id="lettertext">Mom, you're a wonderful <span id="message1">mother,</span><br>So gentle, yet so strong.<br>The many ways you show you care<br>Always make me feel I belong.<p>
+
+You're <span id="message2">patient</span> when I'm foolish;<br>You give guidance when I ask;<br>It seems you can do most anything;<br>You're the master of every task.<p>
+
+You're a dependable source of comfort;<br>You're my cushion when I fall.<br>You help in times of trouble;<br>You support me whenever I call.<p>
+
+I love you more than you know;<br>You have my total respect.<br>If I had my choice of mothers,<br>You'd be the one I'd select!<p>
+
+--Joanna Fuchs<p></div>
+	
+
+<div id="gif1"></div>
+<div id="gif2"></div>
+
+
+<script type="text/javascript">
+	var gif1 = document.getElementById('gif1');
+	
+	gif1.style.opacity = 0;
+	//gif1.style.color = "pink";
+	gif1.style.position = "fixed";
+	gif1.style.top = "100px";
+	gif1.style.right = "20px";
+	gif1.style.height = "400px";
+	gif1.style.width = "400px";
+	gif1.style.transitionTimingFunction = "easeInOut";
+	gif1.style.transitionDuration = "2s";
+	gif1.style.backgroundSize = "cover";
+	gif1.style.backgroundImage = "url(https://i.pinimg.com/originals/9c/97/2b/9c972b76ac2edb9baccb38292b9a3d11.gif)";
+
+	 var message1 = document.getElementById('message1');
+	 message1.addEventListener("mousemove", function(){
+	 	gif1.style.opacity = 1;
+
+	 	if (gif1.style.opacity = 1) {
+	 	    setTimeout(function() {
+	 	        gif1.style.opacity = "0.0"
+	 	    }, 2000)}});
+
+
+	 var gif2 = document.getElementById('gif2');
+	gif2.style.opacity = 0;
+	gif2.style.position = "fixed";
+	gif2.style.top = "100px";
+	gif2.style.left = "-35px";
+	gif2.style.height = "400px";
+	gif2.style.width = "400px";
+	gif2.style.transitionTimingFunction = "easeInOut";
+	gif2.style.transitionDuration = "2s";
+	gif2.style.backgroundSize = "cover";
+	gif2.style.backgroundImage = "url(flowerImageMom.png)";
+
+
+
+	 var message2 = document.getElementById('message2');
+	 message2.addEventListener("mousemove", function(){
+	 	gif2.style.opacity = 1;
+	 	if (gif2.style.opacity = 1) {
+	 	    setTimeout(function() {
+	 	        gif2.style.opacity = "0.0"
+	 	    }, 2000)}});
+
+	 
+		
+	/*message1.addEventListener("click", function(){
+		gif1.style.opacity = 1;
+		gif1.style.color = "pink";
+		gif1.style.height = "200px";
+		gif1.style.width = "200px";
+		gif1.style.transitionTimingFunction = "easeInOut";
+		gif1.style..transitionDuration = "2s";
+		gif1.style.backgroundSize = "cover";
+		gif1.style.backgroundImage = "url(https://i.pinimg.com/originals/9c/97/2b/9c972b76ac2edb9baccb38292b9a3d11.gif)"; 
+		
+
+
+
+    var magic1 = document.getElementById("magic1");
+    magic1.addEventListener("mousemove", function(a) {
+        console.log('hi!');
+        shimmer.style.opacity = "0.5";
+        if (shimmer.style.opacity = 0.5) {
+            setTimeout(function() {
+                shimmer.style.opacity = "0.0"
+            }, 2000)
+        }
+    });*/
+
+
+</script>
+</body>
+</html>

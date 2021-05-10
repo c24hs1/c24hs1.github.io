@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+	<title></title>
+	<style type="text/css">
+		#envelope{
+		background-image:url(envelope.png.jpg);
+		height:400px;
+		width:600px;
+		background-repeat:no-repeat;
+		position:absolute;
+		left:30%;
+		top:80px;
+		}
+
+		#label{
+		font-family:'Dancing Script', cursive;
+		font-size:50px;
+		position:absolute;
+		left:35%;
+		top:5px;
+		}
+
+		#letter{
+			height:100%;
+			width:100%;
+			font-family:'Dancing Script', cursive;
+			font-size:50px;
+		}
+		
+	</style>
+</head>
+<body>
+
+<div id="label">Mom, I love you because...</div>
+<div id="envelope"></div>
+<div id="letter">You're amazing</div>
+
+<script type="text/javascript">
+	var envelope = document.getElementById('envelope');
+
+	function makeLetter(){
+		var letter = document.createElement('div');
+		var letter = document.getElementByID('letter');
+
+	}
+
+	envelope.addEventListener("click", function makeLetter()
+		{envelope.style.opacity = "0";
+	}
+
+		);
+	makeLetter();
+	
+	//var breakfasts = ["nothing", "nothing", "cheerios", "wheat-a-bix", "banana bread", "ensure", "apple", "nothing"];
+
+	//var life = 7;
+
+	//console.log(breakfasts[life]);
+
+	//if (life >3) {
+		//document.body.style.backgroundColor = "purple";
+	//} //else if (life <3) {
+		//document.body.style.backgroundColor = "lightblue";
+	//} //else if (life >3) {
+		//document.body.style.backgroundColor = "purple";
+	
+</script>
+</body>
+</html>

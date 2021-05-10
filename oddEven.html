@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#mj{
+			height:400px;
+			width:400px;
+			border:3px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id ="mj"></div>
+	<script type="text/javascript">
+		var counter = 0;
+
+		var mj = document.getElementById('mj');
+		mj.addEventListener(
+			"click", function(){
+				counter = counter + 1;
+				console.log(counter);
+
+				Can you figure out how to make it (google it) log "i'm even" or "i'm odd" when it's even/odd. 
+
+			})
+
+	</script>
+
+</body>
+</html>
