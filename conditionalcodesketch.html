@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#bird{
+			width:200px;
+			height:200px;
+			background-color:green;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="bird">
+		
+
+
+	</div>
+
+<script type="text/javascript">
+	var bird = document.getElementById("bird");
+	var x = 0; 
+
+	bird.addEventListener("click", function(){
+		x = x+1;
+		console.log(x);
+
+		if (x%2 == 0){
+			bird.style.backgroundColor = "blue";
+		}
+
+		else if (x%2 == 1){
+			bird.style.backgroundColor = "pink";
+		}
+
+		/*else if (){
+			bird.style.backgroundColor = "violet";
+		}*/
+	})
+</script>
+</body>
+</html>

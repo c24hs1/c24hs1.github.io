@@ -47,6 +47,10 @@
 		#message2{
 			color: pink;
 		}
+
+		#message3{
+			color:pink;
+		}
 	</style>
 
 
@@ -62,13 +66,15 @@ You're <span id="message2">patient</span> when I'm foolish;<br>You give guidance
 
 You're a dependable source of comfort;<br>You're my cushion when I fall.<br>You help in times of trouble;<br>You support me whenever I call.<p>
 
-I love you more than you know;<br>You have my total respect.<br>If I had my choice of mothers,<br>You'd be the one I'd select!<p>
+I love you more than you know;<br>You have my total respect.<br>If I had my choice of mothers,<br>You'd be the one I'd <span id="message3">select!</span><p>
 
 --Joanna Fuchs<p></div>
 	
 
 <div id="gif1"></div>
 <div id="gif2"></div>
+
+<audio id="song1" src="CantStopTheFeeling.mp3"></audio>
 
 
 <script type="text/javascript">
@@ -89,7 +95,7 @@ I love you more than you know;<br>You have my total respect.<br>If I had my choi
 	 var message1 = document.getElementById('message1');
 	 message1.addEventListener("mousemove", function(){
 	 	gif1.style.opacity = 1;
-
+	 	song1.pause();
 	 	if (gif1.style.opacity = 1) {
 	 	    setTimeout(function() {
 	 	        gif1.style.opacity = "0.0"
@@ -113,10 +119,19 @@ I love you more than you know;<br>You have my total respect.<br>If I had my choi
 	 var message2 = document.getElementById('message2');
 	 message2.addEventListener("mousemove", function(){
 	 	gif2.style.opacity = 1;
+	 	song1.pause();
 	 	if (gif2.style.opacity = 1) {
 	 	    setTimeout(function() {
 	 	        gif2.style.opacity = "0.0"
 	 	    }, 2000)}});
+
+
+	 var message3 = document.getElementById('message3');
+	 message3.addEventListener("mousemove", function(){
+	 	song1.play();
+	 })
+
+
 
 	 
 		
