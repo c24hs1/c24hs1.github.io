@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	
+	.sidetongueface{
+		background-image:url(forloopspicture.png);
+		height:150px;
+		width:150px;
+		background-repeat:no-repeat;
+		background-size:contain;
+	
+	}
+</style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	/*make an array
+	click on different emojis
+	have the smiley face emoji as a beginner*/
+function makeSidetongueface(i) {
+	var sidetongueface = document.createElement("sidetongueface");
+	document.body.appendChild(sidetongueface);
+	sidetongueface.classList.add("sidetongueface");
+	sidetongueface.classList.add("emoji");
+	document.body.appendChild(sidetongueface);
+
+	sidetongueface.addEventListener("click", function(){
+		function remove(){
+			sidetongueface.classList.remove("sidetongueface");
+			sidetongueface.innerHTML = array[i];
+		};
+
+		function add(){
+			sidetongueface.classList.add("emoji");
+			sidetongueface.innerHTML = "";
+		};
+
+		remove();
+		setTimeout(add, 200)
+		console.log(event);
+	});
+
+};
+
+
+
+
+</script>
+</body>
+</html>
