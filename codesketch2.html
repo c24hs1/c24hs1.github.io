@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poiret+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="websiteicon1.png"/>
+
 		<title></title>
 
 	<style>
@@ -8,8 +12,8 @@
 		#box{
 		width:500px;
 		height:500px;
-		background-position:relative;
-		left:500px;
+		background-position:absolute;
+		left:30%;
 		background-color:lightblue;
 		}
 
@@ -19,11 +23,40 @@
 			background-color:white;
 			border: solid 10px;
 			border-color:black;
-			position:relative;
-			top: 30px;
-			left: 50%;
+			position:absolute;
+			top: 250px;
+			left: 60%;
+			font-family:'Poiret One', cursive;
+			font-size:40px;
+			text-align: center;
+		
+
 
 		}
+
+		#projectlink{
+			height:200px;
+			width:200px;
+			background-image:url(heartemoji1.png);
+			background-size:contain;
+			position:absolute;
+			left:60%;
+			top:30px;
+			
+		}
+
+			.back{
+			font-family: 'Poiret One', cursive;
+			font-size:20px;
+			background-size:absolute;
+			left:60%;
+			top:50px;
+			color:black;
+			text-align: center;
+			}
+			
+
+		
 
 			
 
@@ -34,9 +67,11 @@
 <body>
 	<div id="box"></div>
 
-	<div id="whitebox"></div>
+	<div id="whitebox">Click Me!</div>
 
 	<audio id="mysong1"s idcontrols src ="mysong1.mp3"></audio>
+
+<a href="projects.html"><div id="projectlink" class="back">Back</div></a>
 
 	<script type="text/javascript">
 		var whitebox = document.getElementById("whitebox");
